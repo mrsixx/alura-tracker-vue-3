@@ -1,0 +1,20 @@
+<template>
+  <div class="box gas-text-weigth-bold" :style="estilos">
+    <slot></slot>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'Box',
+  data () {
+    return {
+      estilos: {
+        backgroundColor: '#faf0ca'
+      }
+    }
+  }
+})
+</script>
+
